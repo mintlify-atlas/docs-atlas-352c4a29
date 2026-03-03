@@ -1,0 +1,95 @@
+{
+  "projectType": "saas",
+  "projectName": "Judging Portal",
+  "projectDescription": "A comprehensive platform for managing hackathon judging, project scoring, and winner selection.",
+  "theme": "palm",
+  "primaryColor": "#7C3AED",
+  "lightColor": "#A78BFA",
+  "darkColor": "#5B21B6",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": ["introduction", "quickstart"]
+          },
+          {
+            "group": "Getting Started",
+            "pages": ["getting-started/installation", "getting-started/deployment", "getting-started/database-setup"]
+          },
+          {
+            "group": "Organizer Guide",
+            "pages": [
+              "organizer/data-entry",
+              "organizer/judge-management",
+              "organizer/project-management",
+              "organizer/judge-assignment",
+              "organizer/winners"
+            ]
+          },
+          {
+            "group": "Judge Guide",
+            "pages": [
+              "judge/login",
+              "judge/scoring-projects",
+              "judge/scoring-overview"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/csv-import",
+              "features/wave-assignment",
+              "features/scoring-system",
+              "features/winner-calculation"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Core Endpoints",
+            "pages": [
+              "api/overview",
+              "api/projects",
+              "api/judges",
+              "api/scores"
+            ]
+          },
+          {
+            "group": "Database",
+            "pages": [
+              "api/database/schema",
+              "api/database/tables"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Automated judge assignment algorithm",
+    "CSV data import for projects and judges",
+    "Wave and table assignment system",
+    "Real-time project scoring",
+    "Automatic winner calculation by category",
+    "Dual interfaces for organizers and judges"
+  ],
+  "publicApiSurface": [
+    "POST /api/projects",
+    "POST /api/apis",
+    "GET /api/projects",
+    "POST /api/judgeinfo",
+    "POST /api/assignjudges",
+    "GET /api/scored/judge/:judgeId",
+    "GET /api/unscored/judge/:judgeId",
+    "PUT /api/scoreupdate/judge/:judgeId/project/:projectId/category/:category",
+    "GET /api/winners",
+    "GET /api/categories",
+    "GET /api/judgenames"
+  ]
+}
